@@ -1,0 +1,309 @@
+\documentclass[9pt]{article}
+\usepackage{amsmath}
+\usepackage{physics}
+%opening
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Notes
+\end{abstract}
+\section{Hessian for $E(\theta_{ij},\phi_{ij})$}
+$E = -J1/2\sum_{ij}\vec{S}_{i,j}\vec{S}_{i+1,j}+\vec{S}_{i,j}\vec{S}_{i,j+1}+J2/2\sum_{ij}\vec{S}_{i,j}\vec{S}_{i+1,j+1}+J4/2\sum_{ij}\vec{S}_{i,j}\vec{S}_{i+2,j}+\vec{S}_{i,j}\vec{S}_{i,j+2}$
+\begin{equation*}
+	a_{11} = 
+	\begin{pmatrix}
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{11}} & \pdv{E}{\theta_{11}}{\phi_{11}} \\
+			\pdv{E}{\phi_{11}}{\theta_{11}} & \pdv[2]{E}{\phi_{11}}
+		\end{matrix}& 	
+		\begin{matrix} 
+			\pdv{E}{\theta_{11}}{\theta_{12}} & \pdv{E}{\theta_{11}}{\phi_{12}} \\
+			\pdv{E}{\phi_{11}}{\theta_{12}} & \pdv{E}{\phi_{11}}{\phi_{12}} 
+		\end{matrix}& 
+		\begin{matrix} 
+			\pdv{E}{\theta_{11}}{\theta_{13}} & \pdv{E}{\theta_{11}}{\phi_{13}} \\
+			\pdv{E}{\phi_{11}}{\theta_{13}} & \pdv{E}{\phi_{11}}{\phi_{13}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{11}}{\theta_{14}} & \pdv{E}{\theta_{11}}{\phi_{14}} \\
+			\pdv{E}{\phi_{11}}{\theta_{14}} & \pdv{E}{\phi_{11}}{\phi_{14}} 
+		\end{matrix}\\
+		\begin{matrix} 
+			\pdv{E}{\theta_{12}}{\theta_{11}} & \pdv{E}{\theta_{12}}{\phi_{11}} \\
+			\pdv{E}{\phi_{12}}{\theta_{11}} & \pdv{E}{\phi_{12}}{\phi_{11}} 
+		\end{matrix} & 
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{12}} & \pdv{E}{\theta_{12}}{\phi_{12}} \\
+			\pdv{E}{\phi_{12}}{\theta_{12}} & \pdv[2]{E}{\phi_{12}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{12}}{\theta_{13}} & \pdv{E}{\theta_{12}}{\phi_{13}} \\
+			\pdv{E}{\phi_{12}}{\theta_{13}} & \pdv{E}{\phi_{12}}{\phi_{13}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{12}}{\theta_{14}} & \pdv{E}{\theta_{12}}{\phi_{14}} \\
+			\pdv{E}{\phi_{12}}{\theta_{14}} & \pdv{E}{\phi_{12}}{\phi_{14}} 
+		\end{matrix}\\
+		\begin{matrix} 
+			\pdv{E}{\theta_{13}}{\theta_{11}} & \pdv{E}{\theta_{13}}{\phi_{11}} \\
+			\pdv{E}{\phi_{13}}{\theta_{11}} & \pdv{E}{\phi_{13}}{\phi_{11}} 
+		\end{matrix} & 
+		\begin{matrix} 
+			\pdv{E}{\theta_{13}}{\theta_{12}} & \pdv{E}{\theta_{13}}{\phi_{12}} \\
+			\pdv{E}{\phi_{13}}{\theta_{12}} & \pdv{E}{\phi_{13}}{\phi_{12}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{13}} & \pdv{E}{\theta_{13}}{\phi_{13}} \\
+			\pdv{E}{\phi_{13}}{\theta_{13}} & \pdv[2]{E}{\phi_{13}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{13}}{\theta_{14}} & \pdv{E}{\theta_{13}}{\phi_{14}} \\
+			\pdv{E}{\phi_{13}}{\theta_{14}} & \pdv{E}{\phi_{13}}{\phi_{14}} 
+		\end{matrix}\\
+		\begin{matrix} 
+			\pdv{E}{\theta_{14}}{\theta_{11}} & \pdv{E}{\theta_{14}}{\phi_{11}} \\
+			\pdv{E}{\phi_{14}}{\theta_{11}} & \pdv{E}{\phi_{14}}{\phi_{11}} 
+		\end{matrix} & 
+		\begin{matrix} 
+			\pdv{E}{\theta_{14}}{\theta_{12}} & \pdv{E}{\theta_{14}}{\phi_{12}} \\
+			\pdv{E}{\phi_{14}}{\theta_{12}} & \pdv{E}{\phi_{14}}{\phi_{12}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{14}}{\theta_{13}} & \pdv{E}{\theta_{14}}{\phi_{13}} \\
+			\pdv{E}{\phi_{14}}{\theta_{13}} & \pdv{E}{\phi_{14}}{\phi_{13}}
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{14}} & \pdv{E}{\theta_{14}}{\phi_{14}} \\
+			\pdv{E}{\phi_{14}}{\theta_{14}} & \pdv[2]{E}{\phi_{14}} 
+		\end{matrix}
+	\end{pmatrix}
+\end{equation*}
+
+\begin{equation*}
+	a_{22} = 
+	\begin{pmatrix}
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{21}} & \pdv{E}{\theta_{21}}{\phi_{21}} \\
+			\pdv{E}{\phi_{21}}{\theta_{11}} & \pdv[2]{E}{\phi_{21}}
+		\end{matrix}& 	
+		\begin{matrix} 
+			\pdv{E}{\theta_{21}}{\theta_{22}} & \pdv{E}{\theta_{21}}{\phi_{22}} \\
+			\pdv{E}{\phi_{21}}{\theta_{22}} & \pdv{E}{\phi_{21}}{\phi_{22}} 
+		\end{matrix}& 
+		\begin{matrix} 
+			\pdv{E}{\theta_{21}}{\theta_{23}} & \pdv{E}{\theta_{21}}{\phi_{23}} \\
+			\pdv{E}{\phi_{21}}{\theta_{23}} & \pdv{E}{\phi_{21}}{\phi_{23}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{21}}{\theta_{24}} & \pdv{E}{\theta_{21}}{\phi_{24}} \\
+			\pdv{E}{\phi_{21}}{\theta_{24}} & \pdv{E}{\phi_{21}}{\phi_{24}} 
+		\end{matrix}\\
+		\begin{matrix} 
+			\pdv{E}{\theta_{22}}{\theta_{21}} & \pdv{E}{\theta_{22}}{\phi_{21}} \\
+			\pdv{E}{\phi_{22}}{\theta_{21}} & \pdv{E}{\phi_{22}}{\phi_{21}} 
+		\end{matrix} & 
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{22}} & \pdv{E}{\theta_{22}}{\phi_{22}} \\
+			\pdv{E}{\phi_{22}}{\theta_{22}} & \pdv[2]{E}{\phi_{22}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{22}}{\theta_{23}} & \pdv{E}{\theta_{22}}{\phi_{23}} \\
+			\pdv{E}{\phi_{22}}{\theta_{23}} & \pdv{E}{\phi_{22}}{\phi_{23}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{22}}{\theta_{24}} & \pdv{E}{\theta_{22}}{\phi_{24}} \\
+			\pdv{E}{\phi_{22}}{\theta_{24}} & \pdv{E}{\phi_{22}}{\phi_{24}} 
+		\end{matrix}\\
+		\begin{matrix} 
+			\pdv{E}{\theta_{23}}{\theta_{21}} & \pdv{E}{\theta_{23}}{\phi_{21}} \\
+			\pdv{E}{\phi_{23}}{\theta_{21}} & \pdv{E}{\phi_{23}}{\phi_{21}} 
+		\end{matrix} & 
+		\begin{matrix} 
+			\pdv{E}{\theta_{23}}{\theta_{22}} & \pdv{E}{\theta_{23}}{\phi_{22}} \\
+			\pdv{E}{\phi_{23}}{\theta_{22}} & \pdv{E}{\phi_{23}}{\phi_{22}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{23}} & \pdv{E}{\theta_{23}}{\phi_{23}} \\
+			\pdv{E}{\phi_{23}}{\theta_{23}} & \pdv[2]{E}{\phi_{23}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{23}}{\theta_{24}} & \pdv{E}{\theta_{23}}{\phi_{24}} \\
+			\pdv{E}{\phi_{23}}{\theta_{24}} & \pdv{E}{\phi_{23}}{\phi_{24}} 
+		\end{matrix}\\
+		\begin{matrix} 
+			\pdv{E}{\theta_{24}}{\theta_{21}} & \pdv{E}{\theta_{24}}{\phi_{21}} \\
+			\pdv{E}{\phi_{24}}{\theta_{21}} & \pdv{E}{\phi_{24}}{\phi_{21}} 
+		\end{matrix} & 
+		\begin{matrix} 
+			\pdv{E}{\theta_{24}}{\theta_{22}} & \pdv{E}{\theta_{24}}{\phi_{22}} \\
+			\pdv{E}{\phi_{24}}{\theta_{22}} & \pdv{E}{\phi_{24}}{\phi_{22}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{24}}{\theta_{23}} & \pdv{E}{\theta_{24}}{\phi_{23}} \\
+			\pdv{E}{\phi_{24}}{\theta_{23}} & \pdv{E}{\phi_{24}}{\phi_{23}}
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{24}} & \pdv{E}{\theta_{24}}{\phi_{24}} \\
+			\pdv{E}{\phi_{24}}{\theta_{24}} & \pdv[2]{E}{\phi_{24}} 
+		\end{matrix}
+	\end{pmatrix}
+\end{equation*}
+
+\begin{equation*}
+	a_{33} = 
+	\begin{pmatrix}
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{31}} & \pdv{E}{\theta_{31}}{\phi_{31}} \\
+			\pdv{E}{\phi_{31}}{\theta_{31}} & \pdv[2]{E}{\phi_{31}}
+		\end{matrix}& 	
+		\begin{matrix} 
+			\pdv{E}{\theta_{31}}{\theta_{32}} & \pdv{E}{\theta_{31}}{\phi_{32}} \\
+			\pdv{E}{\phi_{31}}{\theta_{32}} & \pdv{E}{\phi_{31}}{\phi_{32}} 
+		\end{matrix}& 
+		\begin{matrix} 
+			\pdv{E}{\theta_{31}}{\theta_{33}} & \pdv{E}{\theta_{31}}{\phi_{33}} \\
+			\pdv{E}{\phi_{31}}{\theta_{33}} & \pdv{E}{\phi_{31}}{\phi_{33}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{31}}{\theta_{34}} & \pdv{E}{\theta_{31}}{\phi_{34}} \\
+			\pdv{E}{\phi_{31}}{\theta_{34}} & \pdv{E}{\phi_{31}}{\phi_{34}} 
+		\end{matrix}\\
+		\begin{matrix} 
+			\pdv{E}{\theta_{32}}{\theta_{31}} & \pdv{E}{\theta_{32}}{\phi_{31}} \\
+			\pdv{E}{\phi_{32}}{\theta_{31}} & \pdv{E}{\phi_{32}}{\phi_{31}} 
+		\end{matrix} & 
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{32}} & \pdv{E}{\theta_{32}}{\phi_{32}} \\
+			\pdv{E}{\phi_{32}}{\theta_{32}} & \pdv[2]{E}{\phi_{32}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{32}}{\theta_{33}} & \pdv{E}{\theta_{32}}{\phi_{33}} \\
+			\pdv{E}{\phi_{32}}{\theta_{33}} & \pdv{E}{\phi_{32}}{\phi_{33}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{32}}{\theta_{34}} & \pdv{E}{\theta_{32}}{\phi_{34}} \\
+			\pdv{E}{\phi_{32}}{\theta_{34}} & \pdv{E}{\phi_{32}}{\phi_{34}} 
+		\end{matrix}\\
+		\begin{matrix} 
+			\pdv{E}{\theta_{33}}{\theta_{31}} & \pdv{E}{\theta_{33}}{\phi_{31}} \\
+			\pdv{E}{\phi_{33}}{\theta_{31}} & \pdv{E}{\phi_{33}}{\phi_{31}} 
+		\end{matrix} & 
+		\begin{matrix} 
+			\pdv{E}{\theta_{33}}{\theta_{32}} & \pdv{E}{\theta_{33}}{\phi_{32}} \\
+			\pdv{E}{\phi_{33}}{\theta_{32}} & \pdv{E}{\phi_{33}}{\phi_{32}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{33}} & \pdv{E}{\theta_{33}}{\phi_{33}} \\
+			\pdv{E}{\phi_{33}}{\theta_{33}} & \pdv[2]{E}{\phi_{33}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{33}}{\theta_{34}} & \pdv{E}{\theta_{33}}{\phi_{34}} \\
+			\pdv{E}{\phi_{33}}{\theta_{34}} & \pdv{E}{\phi_{33}}{\phi_{34}} 
+		\end{matrix}\\
+		\begin{matrix} 
+			\pdv{E}{\theta_{34}}{\theta_{31}} & \pdv{E}{\theta_{34}}{\phi_{31}} \\
+			\pdv{E}{\phi_{34}}{\theta_{31}} & \pdv{E}{\phi_{34}}{\phi_{31}} 
+		\end{matrix} & 
+		\begin{matrix} 
+			\pdv{E}{\theta_{34}}{\theta_{32}} & \pdv{E}{\theta_{34}}{\phi_{32}} \\
+			\pdv{E}{\phi_{34}}{\theta_{32}} & \pdv{E}{\phi_{34}}{\phi_{32}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{34}}{\theta_{33}} & \pdv{E}{\theta_{34}}{\phi_{33}} \\
+			\pdv{E}{\phi_{34}}{\theta_{33}} & \pdv{E}{\phi_{34}}{\phi_{33}}
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{34}} & \pdv{E}{\theta_{34}}{\phi_{34}} \\
+			\pdv{E}{\phi_{34}}{\theta_{34}} & \pdv[2]{E}{\phi_{34}} 
+		\end{matrix}
+	\end{pmatrix}
+\end{equation*}
+
+\begin{equation*}
+	a_{44} = 
+	\begin{pmatrix}
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{41}} & \pdv{E}{\theta_{41}}{\phi_{41}} \\
+			\pdv{E}{\phi_{41}}{\theta_{41}} & \pdv[2]{E}{\phi_{41}}
+		\end{matrix}& 	
+		\begin{matrix} 
+			\pdv{E}{\theta_{41}}{\theta_{42}} & \pdv{E}{\theta_{41}}{\phi_{42}} \\
+			\pdv{E}{\phi_{41}}{\theta_{42}} & \pdv{E}{\phi_{41}}{\phi_{42}} 
+		\end{matrix}& 
+		\begin{matrix} 
+			\pdv{E}{\theta_{41}}{\theta_{43}} & \pdv{E}{\theta_{41}}{\phi_{43}} \\
+			\pdv{E}{\phi_{41}}{\theta_{43}} & \pdv{E}{\phi_{41}}{\phi_{43}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{41}}{\theta_{44}} & \pdv{E}{\theta_{41}}{\phi_{44}} \\
+			\pdv{E}{\phi_{41}}{\theta_{44}} & \pdv{E}{\phi_{41}}{\phi_{44}} 
+		\end{matrix}\\
+		\begin{matrix} 
+			\pdv{E}{\theta_{42}}{\theta_{41}} & \pdv{E}{\theta_{42}}{\phi_{41}} \\
+			\pdv{E}{\phi_{42}}{\theta_{41}} & \pdv{E}{\phi_{42}}{\phi_{41}} 
+		\end{matrix} & 
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{42}} & \pdv{E}{\theta_{42}}{\phi_{42}} \\
+			\pdv{E}{\phi_{42}}{\theta_{42}} & \pdv[2]{E}{\phi_{42}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{42}}{\theta_{43}} & \pdv{E}{\theta_{42}}{\phi_{43}} \\
+			\pdv{E}{\phi_{42}}{\theta_{43}} & \pdv{E}{\phi_{42}}{\phi_{43}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{42}}{\theta_{44}} & \pdv{E}{\theta_{42}}{\phi_{44}} \\
+			\pdv{E}{\phi_{42}}{\theta_{44}} & \pdv{E}{\phi_{42}}{\phi_{44}} 
+		\end{matrix}\\
+		\begin{matrix} 
+			\pdv{E}{\theta_{43}}{\theta_{41}} & \pdv{E}{\theta_{43}}{\phi_{41}} \\
+			\pdv{E}{\phi_{43}}{\theta_{41}} & \pdv{E}{\phi_{43}}{\phi_{41}} 
+		\end{matrix} & 
+		\begin{matrix} 
+			\pdv{E}{\theta_{43}}{\theta_{42}} & \pdv{E}{\theta_{43}}{\phi_{42}} \\
+			\pdv{E}{\phi_{43}}{\theta_{42}} & \pdv{E}{\phi_{43}}{\phi_{42}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{43}} & \pdv{E}{\theta_{43}}{\phi_{43}} \\
+			\pdv{E}{\phi_{43}}{\theta_{43}} & \pdv[2]{E}{\phi_{43}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{43}}{\theta_{44}} & \pdv{E}{\theta_{43}}{\phi_{44}} \\
+			\pdv{E}{\phi_{43}}{\theta_{44}} & \pdv{E}{\phi_{43}}{\phi_{44}} 
+		\end{matrix}\\
+		\begin{matrix} 
+			\pdv{E}{\theta_{44}}{\theta_{41}} & \pdv{E}{\theta_{44}}{\phi_{41}} \\
+			\pdv{E}{\phi_{44}}{\theta_{41}} & \pdv{E}{\phi_{44}}{\phi_{41}} 
+		\end{matrix} & 
+		\begin{matrix} 
+			\pdv{E}{\theta_{44}}{\theta_{42}} & \pdv{E}{\theta_{44}}{\phi_{42}} \\
+			\pdv{E}{\phi_{44}}{\theta_{42}} & \pdv{E}{\phi_{44}}{\phi_{42}} 
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv{E}{\theta_{44}}{\theta_{43}} & \pdv{E}{\theta_{44}}{\phi_{43}} \\
+			\pdv{E}{\phi_{44}}{\theta_{43}} & \pdv{E}{\phi_{44}}{\phi_{43}}
+		\end{matrix}&
+		\begin{matrix} 
+			\pdv[2]{E}{\theta_{44}} & \pdv{E}{\theta_{44}}{\phi_{44}} \\
+			\pdv{E}{\phi_{44}}{\theta_{44}} & \pdv[2]{E}{\phi_{44}} 
+		\end{matrix}
+	\end{pmatrix}
+\end{equation*}
+
+\begin{equation*}
+	Hess_{m,n} = 
+	\begin{pmatrix}
+		a_{1,1} & 0 & 0 & 0 &\cdots & 0 \\
+		0 & a_{2,2} & 0 & 0 &\cdots & 0 \\
+		0 & 0 & a_{3,3} & 0 &\cdots & 0 \\
+		0 & 0 & 0 & a_{4,4} &\cdots & 0 \\
+		\vdots  & \vdots  & \vdots & \vdots & \ddots & \vdots\\
+		0 & 0 & 0 & 0 & \cdots & a_{m,n} 
+	\end{pmatrix}
+\end{equation*}
+
+\end{document}
