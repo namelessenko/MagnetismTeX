@@ -1,0 +1,1 @@
+\contentsline {section}{\numberline {0.1}Hessian for $E(\theta _{ij},\phi _{ij})$}{1}{}%
