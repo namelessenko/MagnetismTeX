@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.28)  10 MAR 2023 15:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.28)  10 MAR 2023 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -446,22 +446,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--28
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
+Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--53
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
 
  []
 
 
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 69
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 72
 .
 
 [2
@@ -473,7 +473,7 @@ Package rerunfilecheck Info: File `template_Article.out' has not changed.
 Here is how much of TeX's memory you used:
  10126 strings out of 475385
  156850 string characters out of 2786727
- 532005 words of memory out of 3000000
+ 533005 words of memory out of 3000000
  31390 multiletter control sequences out of 15000+600000
  478699 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -497,7 +497,7 @@ sfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
 ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/M
 iKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmsy8.pfb>
-Output written on template_Article.pdf (3 pages, 228550 bytes).
+Output written on template_Article.pdf (3 pages, 228937 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)

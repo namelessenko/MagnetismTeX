@@ -23,8 +23,11 @@ $\vec{S} = \begin{Bmatrix}
 	\cos\theta_{ij}\cos\phi_{ij} \\
 	\cos\theta_{ij}\sin\phi_{ij} \\
 	\sin\phi_{ij}
-\end{Bmatrix}$
+\end{Bmatrix}$;
 \newline
+
+
+$-J1/2 \ \vec{S}_{ij}\cdot\vec{S}_{i+1j} = \sin\theta_{ij}\sin\theta_{i+1j}+\cos\theta_{ij}\cos\theta_{i+1j}\cos(\phi_{ij}-\phi_{i+1j})$;
 
 Expression for the energy has the next form, where $\sum_{n}^{N}$ sum over all elements of matrices:
 \begin{equation}
@@ -69,8 +72,7 @@ Then, matrix \eqref{eq:1} has following form:
 	\footnotesize
 	\setlength\arraycolsep{1pt}
 	\begin{pmatrix}
-%		\setstacktabbedgap{10pt}
-		
+%		\setstacktabbedgap{10pt}		
 		0 & \sin\theta_{ij}\cos\theta_{i\pm1j}\sin(\delta \phi_{ij}) & \sin\theta_{ij}\cos\theta_{i\pm1j}\pm \sin\theta_{ij}\sin\theta_{i\pm1j}\cos(\delta \phi_{ij}) & -\sin\theta_{ij}\cos\theta_{i\pm1j}\sin(\delta \phi_{ij})\\
 		\sin\theta_{ij}\cos\theta_{i\pm1j}\sin(\delta \phi_{ij}) & 0 & \sin\theta_{i\pm1j}\cos\theta_{ij}\sin(\delta \phi_{ij}) & \cos\theta_{ij}\cos\theta_{i\pm1j}\cos(\delta \phi_{ij})\\
 		\cos\theta_{ij}\cos\theta_{i\pm1j}\pm \sin\theta_{ij}\sin\theta_{i\pm1j}\cos(\delta \phi_{ij}) & \sin\theta_{i\pm1j}\cos\theta_{ij}\sin(\delta \phi_{ij}) & 0 & -\cos\theta_{ij}\sin\theta_{i\pm1j}\sin(\delta \phi_{ij})\\
