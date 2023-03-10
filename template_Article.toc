@@ -1,0 +1,1 @@
+\contentsline {chapter}{\numberline {1}Minimization $E(\theta _{ij},\phi _{ij})$}{2}{chapter.1}%
